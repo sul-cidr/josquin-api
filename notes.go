@@ -28,7 +28,7 @@ func main() {
 
 	defer f.Close()
 
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 1000000; i++ {
 		_, err := f.WriteString(notes[rand.Intn(7)] + "\n")
 		check(err)
 	}
