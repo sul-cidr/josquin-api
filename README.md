@@ -1,3 +1,3 @@
 # Josquin API
 
-Generate suffix trees from musical corpora.
+A REST API that emits data about the Josquin musical corpus.
