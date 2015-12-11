@@ -1,13 +1,15 @@
 
 
 import express from 'express';
+
 import configExpress from './app/config/express';
+import configRoutes from './app/config/routes';
 
 
 const app = express();
 
-// Configure Express.
 configExpress(app);
+configRoutes(app);
 
 
 module.exports = app;
