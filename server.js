@@ -2,14 +2,14 @@
 
 import express from 'express';
 
-import configExpress from './app/config/express';
-import configRoutes from './app/config/routes';
-
 
 const app = express();
+app.set('port', process.env.PORT || 3000);
 
-configExpress(app);
-configRoutes(app);
+
+app.get('/api/tree', function(req, res) {
+  res.send('tree');
+});
 
 
 module.exports = app;
